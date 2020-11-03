@@ -1,100 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title></title>
+		<meta charset="utf-8">
+		<title>Jitoo Resto</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
-	<style type="text/css">
-		 * {
-        margin:0; 
-        padding:0;
-    }
-		h1{
-			text-align: center;
-		}
-		h3{
-			text-align: center;
-		}
-		.menu{
-			width: 100%;
-			position: absolute;
-			top:800px;
-			background-color: #E3E3E3;
-		}
-		header{
-			width: 100%;
-			position: absolute;
-			top:0px;
-			height: 100px;
-			background-color: transparent;
-			border-bottom: 2px solid #E3E3E3;
-
-		}
-		.about{
-			width: 100%;
-			height: 700px;
-			position: absolute;
-			top: 110px;
-		}
-		nav{
-			position: absolute;
-			top:35px;
-			right: 20px;
-		}
-		.table{
-			position: absolute;
-			width:50%;
-			top:1580px;
-			left: 100px;
-		}
-		.outlet{
-			position: absolute;
-			width: 50%;
-			height: 150px;
-			right: 5px;
-			top:1580px;
-		}
-		footer{
-			position: absolute;
-			background-color: #E3E3E3; 
-			width: 100%;
-			height: 50px;
-			top: 1760px;
-			text-align: center;
-		}
-	</style>
 	<body>
 		<header>
-			<img src="img/logo1.png" style="width:130px; height: 75px; margin: 10px 0 0 20px;">
+			<img src="img/logo1.png" alt="logo1">
 			<nav>
-				<a href="index.html">Home</a>
-				<a href="menu.html">Menu</a>
-				<a href="">Outlet</a>
+				<ul>
+					<li><a href="#about">Home</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="https://github.com/MutiaMuthmainnah/Landing-Page">Outlet</a></li>
+				</ul>
 			</nav>
+			<form>
+			  	<input class="search" type="text" placeholder="Cari..." required>
+			  	<input class="button" type="button" value="Cari">		
+			</form>
 		</header>
-		<div class="about">
-			<img src="img/resto.jpeg" style="width:1000px; height:500px; margin:0px 0 0 175px;">
-			<p style="width:80%; margin:50px 0 0 135px; text-align: justify;">Korea terkenal akan sajian makanan yang akan mereka hidangkan. Mereka percaya makanan harus memuaskan seluruh indra, bukan hanya mengenyangkan perut. Mereka menerapkan keseimbangan antara Yin dan Yang dalam menghasilkan makanan yang sehat dan proposional, sehingga membentuk sebuah seni yang indah dan dapat dinikmati. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<div class="about" id="about">
+			<img src="img/resto.jpeg" alt="resto">
+			<p>Korea terkenal akan sajian makanan yang akan mereka hidangkan. Mereka percaya makanan harus memuaskan seluruh indra, bukan hanya mengenyangkan perut. Mereka menerapkan keseimbangan antara Yin dan Yang dalam menghasilkan makanan yang sehat dan proposional, sehingga membentuk sebuah seni yang indah dan dapat dinikmati. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-		<div class="menu">
+		<div class="menu" id="menu">
 			<h1>Menu</h1>
-			<img src="img/1.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/2.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/3.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/4.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/5.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/6.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/7.png" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/8.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/9.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
-			<img src="img/10.jpeg" style="width:200px; height:300px; margin: 50px 0 0 50px">
+			<img src="img/1.jpeg" alt="1">
+			<img src="img/2.jpeg" alt="2">
+			<img src="img/3.jpeg" alt="3">
+			<img src="img/4.jpeg" alt="4">
+			<img src="img/5.jpeg" alt="5">
+			<img src="img/6.jpeg" alt="6">
+			<img src="img/7.png" alt="7">
+			<img src="img/8.jpeg" alt="8">
+			<img src="img/9.jpeg" alt="9">
+			<img src="img/10.jpeg" alt="10">
 		</div>
 		<div class="table">
-			<table border="1" width="600px" 	>
+			<table>
 				<thead>
 					<tr>
 						<th>Menu</th>
@@ -125,7 +74,7 @@
 				</tbody>
 			</table>
 		</div>
-		<div class="outlet">
+		<div class="outlet" id="outlet">
 			<h1>Outlet Jitoo Resto</h1><br>
 			<h3>Jakarta || Mall Ciputra (Citraland)</h3>
 			<h3>Bandung || Cihampelas Walk,Young Street</h3>
